@@ -1,5 +1,5 @@
 function replace(arr,index,secondArr) {
-    arr.splice(index,arr.length-index,...secondArr)
+    arr.splice(index,2,...secondArr)
 }
 
 let testArray = [1, 2, 100, 100, 6]
