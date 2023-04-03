@@ -9,22 +9,23 @@ replace(testArray, 2, [3, 4, 5])
 console.log(testArray)
 
 
-// function copyReplace(array, index, secondArr) {
-//     array.splice(index,array.length)
-//     return [...array,...secondArr]
-// }
-//
-// console.log(copyReplace([1, 2, 100, 200, 6], 2,  [3, 4, 5]))
-//
-//
-//
-//
-// let customerOrder = []
-//
-// function recordOrders(time,arr) {
-//     customerOrder.push(time,...arr)
-// }
-//
-// recordOrders(new Date, ["coffee", "yogurt", "pizza"])
-//
-// console.log(customerOrder)
+function copyReplace(array, from, to, secondArr) {
+    let arr1 = array.slice(0,from)
+    let arr2 = array.slice(to)
+    return [...arr1,...secondArr,...arr2]
+}
+
+console.log(copyReplace([1, 2, 100, 200, 6], 2, 4, [3, 4, 5]))
+
+
+
+
+let customerOrder = []
+
+function recordOrders(time,arr) {
+    customerOrder.push(time,...arr)
+}
+
+recordOrders(new Date, ["coffee", "yogurt", "pizza"])
+
+console.log(customerOrder)
