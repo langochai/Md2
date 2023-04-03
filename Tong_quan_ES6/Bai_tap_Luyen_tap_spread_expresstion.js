@@ -22,8 +22,8 @@
 
 let customerOrder = []
 
-function recordOrders(tg,...str) {
-    customerOrder.push({time:tg,birds:str})
+function recordOrders(time,...birds) {
+    customerOrder.push({time,birds})
 }
 recordOrders(new Date, "coffee", "yogurt", "pizza")
 console.log(customerOrder)
@@ -36,6 +36,6 @@ console.log(customerOrder)
 //
 // }
 //
-// recordOrders(new Date, "coffee", "yaourt", "pizza")
+// recordOrders(new Date, "coffee", "yogurt", "pizza")
 //
 // console.log(customerOrder)
