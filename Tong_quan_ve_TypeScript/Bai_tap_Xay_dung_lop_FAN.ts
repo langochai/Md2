@@ -41,10 +41,10 @@ class Fan{
         this._Color = value;
     }
     toString(){
-        console.log(this._Speed)
         console.log(this._Color)
         console.log(this._Radius)
         if(this._Status){
+            console.log(this._Speed)
             console.log('on')
         } else {
             console.log('off')
@@ -60,3 +60,4 @@ fan1.setColor('yellow')
 fan1.setStatus(true)
 let fan2 = new Fan()
 fan2.setSpeed(2)
+console.log(fan1.getColor())
