@@ -1,17 +1,13 @@
-function saveThePrisoner(n, m, s) {
-    let arr = []
-    let count = 1
-    for(let i=1;i<=s+m;i++){
-        if(count===n+1){
-            count = 1
-        }
-        arr.push(count)
-        count++
+let n = [1,2,3,4]
+let k = 2
+
+let index = 0
+for (let i = 0; i < 3; i++) {
+    let a = n[index]
+    n.splice(0,index+1)
+    let result =[]
+    for (let i = 0; i < n.length; i++) {
+        result.push([a,n[i]])
     }
-    let check = arr.slice(s-1,(s-1)+m)
-    return check[check.length-1]
+    console.log(result)
 }
-let n = 7
-let m = 19
-let s = 2
-console.log(saveThePrisoner(n,m,s))
