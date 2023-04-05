@@ -1,8 +1,10 @@
+enum Speed{
+    SLOW,
+    MEDIUM,
+    FAST
+}
 class Fan{
-    // SLOW : number = 1;
-    // MEDIUM : number = 2;
-    // FAST : number = 3;
-    _Speed : number = 1
+    _Speed : Speed = Speed.SLOW
     _Status : boolean = false
     _Radius : number = 5
     _Color : string = 'blue'
