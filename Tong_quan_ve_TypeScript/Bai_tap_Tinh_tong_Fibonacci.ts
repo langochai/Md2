@@ -6,12 +6,11 @@ function fibo(n:number):number {
     }
 }
 let n = 5;
-for (let i = 1; i <= n; i++) {
-    console.log(fibo(i))
-}
 let sum:number =0;
 for (let i = 1; i <= n; i++) {
+    console.log(fibo(i))
     sum += fibo(i)
 }
-console.log([])
-console.log(sum)
+
+
+console.log('tong ' + sum)
