@@ -6,7 +6,7 @@ phân tích bài toán:
 -số đầu tiên trong dãy số con sẽ chỉ chạy từ vị trí 0 đến vị trí arr.length + 1 - k
 -hàm calculate sẽ sinh ra các dãy số con từ chữ số đầu tiên được chọn riêng với các bước:
     + chọn chữ số đầu tiên
-    + hàm generate sẽ sinh ra thêm một số để thêm vào đầu sau số đầu tiên đã được chọn
+    + hàm con generate sẽ sinh ra thêm một số để thêm vào đầu sau số đầu tiên đã được chọn
       gọi hàm generate k-1 lần đễ sinh ra k-1 số sau số đầu tiên
 -gọi hàm calculate arr.length + 1 - k lần để lấy ra đủ tất cả các trường hợp
 */
