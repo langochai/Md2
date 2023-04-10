@@ -35,7 +35,7 @@ class ComparableCircle extends Circle implements Comparable{
 }
 
 let circles = [];
-circles[0] = new ComparableCircle(10);
+circles[0] = new ComparableCircle(88);
 circles[1] = new ComparableCircle(20);
 circles[2] = new ComparableCircle(30);
 
