@@ -1,5 +1,5 @@
-let a = 3
-let b = 9
+let a = 17
+let b = 24
 function squares(a,b){
     let result = []
     for (let i = Math.floor(Math.sqrt(a)); i <= Math.round(Math.sqrt(b)); i++) {
