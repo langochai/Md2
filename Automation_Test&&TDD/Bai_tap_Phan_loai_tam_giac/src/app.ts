@@ -9,7 +9,8 @@ export class TriangleClassifier {
         this.thirdSide = thirdSide;
     }
     isTriangle():boolean{
-        return (this.firstSide+this.secondSide>this.thirdSide&&
+        if (this.firstSide<=0||this.secondSide<=0||this.thirdSide<=0) return false
+        else return (this.firstSide+this.secondSide>this.thirdSide&&
            this.secondSide+this.thirdSide>this.firstSide&&
            this.thirdSide+this.firstSide>this.secondSide)
     }
