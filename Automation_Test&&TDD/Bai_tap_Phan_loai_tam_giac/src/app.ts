@@ -1,14 +1,25 @@
-export class BasicCalculator{
-    add(a: number, b: number): number {
-        return a + b;
+export class TriangleClassifier {
+    firstSide:number;
+    secondSide:number;
+    thirdSide:number;
+
+    constructor(firstSide: number, secondSide: number, thirdSide: number) {
+        this.firstSide = firstSide;
+        this.secondSide = secondSide;
+        this.thirdSide = thirdSide;
     }
-    subtract(a: number, b: number): number {
-        return a - b;
+    isTriangle():boolean{
+        return (this.firstSide+this.secondSide>this.thirdSide&&
+           this.secondSide+this.thirdSide>this.firstSide&&
+           this.thirdSide+this.firstSide>this.secondSide)
     }
-    multiple(a: number, b: number): number {
-        return a * b;
-    }
-    divide(a: number, b: number): number {
-        return a/b;
+    classify(){
+        if(this.isTriangle()){
+            if(this.firstSide===this.secondSide&&this.secondSide===this.thirdSide) return 'tam giac deu'
+            else if (this.firstSide==this.secondSide&&this.secondSide!==this.thirdSide) return 'tam giac can'
+            else return 'tam giac thuong'
+        } else {
+            return 'khong phai tam giac'
+        }
     }
 }
