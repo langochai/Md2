@@ -18,7 +18,7 @@ var LinkedList = /** @class */ (function () {
         this.size++;
     };
     LinkedList.prototype.insertLastNode = function (data) {
-        if (!this.head && !this.tail) {
+        if (!this.head) {
             this.insertFirstNode(data);
         }
         else {
