@@ -27,17 +27,14 @@ var BinaryTree = /** @class */ (function () {
         return null;
     };
     // @ts-ignore
-    BinaryTree.prototype.inorder = function (value) {
-        var node = this.searchNode(value);
+    BinaryTree.prototype.preorder = function (node) {
         if (node) {
             console.log(node.data);
             if (node.left) {
-                // @ts-ignore
-                this.inorder(node.left);
+                this.preorder(node.left);
             }
             if (node.right) {
-                // @ts-ignore
-                this.inorder(node.right);
+                this.preorder(node.right);
             }
         }
     };
@@ -114,9 +111,24 @@ var BinaryTree = /** @class */ (function () {
                     rightMost = rightMost.right;
                 }
                 var parentOfRightMost = this.findParent(rightMost.data);
-                if (rightMost.left)
-                    parentOfRightMost.right = rightMost.left;
-                currentNode.data = rightMost.data;
+                if (currentNode.left.data === rightMost.data) {
+                    currentNode.data = rightMost.data;
+                    if (rightMost.left) {
+                        currentNode.left = rightMost.left;
+                    }
+                    else {
+                        currentNode.left = null;
+                    }
+                }
+                else {
+                    currentNode.data = rightMost.data;
+                    if (rightMost.left) {
+                        parentOfRightMost.right = rightMost.left;
+                    }
+                    else {
+                        parentOfRightMost.right = null;
+                    }
+                }
                 this.totalNode--;
             }
         }

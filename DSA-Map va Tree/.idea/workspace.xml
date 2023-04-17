@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ef8d8cb-fdf6-4581-9ce6-6e1189c20635" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/interface/Tree.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/src/BinaryTree.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/src/TreeNode.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSA- Stack va Queue/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA- Stack va Queue/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/Queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/Queue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/Queue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/Queue.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thuc_hanh_Tim_kiem_cay_nhi_phan/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Thuc_hanh_Tim_kiem_cay_nhi_phan/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/interface/Tree.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/interface/Tree.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/src/BinaryTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/src/BinaryTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/src/BinaryTree.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/src/BinaryTree.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/candies.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test/candies.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test/testjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test/testjs.js" afterDir="false" />
     </list>
@@ -36,21 +35,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/PC/Documents/GitHub/Md2/DSA-Map va Tree/Bai_tap_Xoa_phan_tu_trong_BST",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Documents/GitHub/Md2/DSA-Map va Tree/Bai_tap_Xoa_phan_tu_trong_BST&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PC\Documents\GitHub\Md2\DSA-Map va Tree\Bai_tap_Xoa_phan_tu_trong_BST" />
@@ -64,7 +63,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681702491777</updated>
-      <workItem from="1681702492904" duration="10050000" />
+      <workItem from="1681702492904" duration="16686000" />
+      <workItem from="1681746010379" duration="395000" />
     </task>
     <servers />
   </component>

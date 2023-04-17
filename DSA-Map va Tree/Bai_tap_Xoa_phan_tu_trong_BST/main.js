@@ -2,11 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var BinaryTree_1 = require("./src/BinaryTree");
 var tree = new BinaryTree_1.BinaryTree();
-tree.insert(20);
-tree.insert(10);
+tree.insert(50);
 tree.insert(40);
-tree.insert(16);
-tree.insert(14);
-// console.log(tree.findParent(16))
-tree.deleteNode(20);
+tree.insert(60);
+tree.insert(30);
+tree.insert(42);
+tree.insert(55);
+tree.insert(65);
+tree.deleteNode(50);
+tree.deleteNode(42);
 console.log(tree);

@@ -31,17 +31,14 @@ export class BinaryTree<E> implements Tree<E> {
     }
 
     // @ts-ignore
-    inorder(value: E): void {
-        let node = this.searchNode(value)
+    preorder(node: TreeNode<E>): void {
         if (node) {
             console.log(node.data)
             if (node.left) {
-                // @ts-ignore
-                this.inorder(node.left)
+                this.preorder(node.left)
             }
             if (node.right) {
-                // @ts-ignore
-                this.inorder(node.right)
+                this.preorder(node.right)
             }
         }
     }
@@ -104,13 +101,23 @@ export class BinaryTree<E> implements Tree<E> {
         let currentNode = this.searchNode(value);
         if (currentNode) {
             if (!currentNode.left) {
-                let parentNode = this.findParent(value)
-                if (parentNode.left && parentNode.left.data === currentNode.data) {
-                    parentNode.left = currentNode.right
-                    this.totalNode--
-                } else if (parentNode.right && parentNode.right.data === currentNode.data) {
-                    parentNode.right = currentNode.right
-                    this.totalNode--
+                if(currentNode.data === this.root.data){
+                    if(!currentNode.right){
+                        currentNode.data = null
+                    } else {
+                        currentNode.data = this.root.right.data
+                        if (this.root.right.left) currentNode.left = this.root.right.left
+                        if (this.root.right.right) currentNode.right = this.root.right.right
+                    }
+                } else {
+                    let parentNode = this.findParent(value)
+                    if (parentNode.left && parentNode.left.data === currentNode.data) {
+                        parentNode.left = currentNode.right
+                        this.totalNode--
+                    } else if (parentNode.right && parentNode.right.data === currentNode.data) {
+                        parentNode.right = currentNode.right
+                        this.totalNode--
+                    }
                 }
             } else {
                 let rightMost = currentNode.left
@@ -118,8 +125,21 @@ export class BinaryTree<E> implements Tree<E> {
                     rightMost = rightMost.right
                 }
                 let parentOfRightMost = this.findParent(rightMost.data)
-                if (rightMost.left) parentOfRightMost.right = rightMost.left
-                currentNode.data = rightMost.data
+                if (currentNode.left.data === rightMost.data) {
+                    currentNode.data = rightMost.data
+                    if (rightMost.left) {
+                        currentNode.left = rightMost.left
+                    } else {
+                        currentNode.left = null
+                    }
+                } else {
+                    currentNode.data = rightMost.data
+                    if (rightMost.left) {
+                        parentOfRightMost.right = rightMost.left
+                    } else {
+                        parentOfRightMost.right = null
+                    }
+                }
                 this.totalNode--
             }
         }
