@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3ef8d8cb-fdf6-4581-9ce6-6e1189c20635" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/interface/Tree.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/src/BinaryTree.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/src/TreeNode.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA- Stack va Queue/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA- Stack va Queue/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/Queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/Queue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/Queue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/Queue.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA- Stack va Queue/Bai_tap_Uu_tien_kham_benh/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thuc_hanh_Tim_kiem_cay_nhi_phan/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Thuc_hanh_Tim_kiem_cay_nhi_phan/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/candies.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test/candies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/testjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../test/testjs.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OXMUtnsy3wo0IrusyOwDQ78Q6S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/PC/Documents/GitHub/Md2/DSA-Map va Tree/Bai_tap_Xoa_phan_tu_trong_BST",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\Documents\GitHub\Md2\DSA-Map va Tree\Bai_tap_Xoa_phan_tu_trong_BST" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ef8d8cb-fdf6-4581-9ce6-6e1189c20635" name="Changes" comment="" />
+      <created>1681702491777</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681702491777</updated>
+      <workItem from="1681702492904" duration="10050000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Thuc_hanh_Map/company-info.js" />
+        <option value="$PROJECT_DIR$/Thuc_hanh_Tim_kiem_cay_nhi_phan/interface/Tree.js" />
+        <option value="$PROJECT_DIR$/Thuc_hanh_Tim_kiem_cay_nhi_phan/src/TreeNode.js" />
+        <option value="$PROJECT_DIR$/Thuc_hanh_Tim_kiem_cay_nhi_phan/main.js" />
+        <option value="$PROJECT_DIR$/Thuc_hanh_Tim_kiem_cay_nhi_phan/src/BinaryTree.js" />
+        <option value="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/src/TreeNode.js" />
+        <option value="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/src/BinaryTree.js" />
+        <option value="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/interface/Tree.js" />
+        <option value="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/main.js" />
+        <option value="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/src/TreeNode.js" />
+        <option value="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/src/BinaryTree.js" />
+        <option value="$PROJECT_DIR$/Bai_tap_Xoa_phan_tu_trong_BST/interface/Tree.js" />
+      </list>
+    </option>
+  </component>
+</project>
