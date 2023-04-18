@@ -80,21 +80,26 @@ export class BinaryTree<E> implements Tree<E> {
     }
 
     findParent(value: E) {
-        let parentNode = this.root
-        while (parentNode) {
-            if (parentNode.left && parentNode.left.data === value) {
-                return parentNode
-            } else if (parentNode.right && parentNode.right.data === value) {
-                return parentNode
+        if(this.root.data === value){
+            return null
+        } else {
+            let parentNode = this.root
+            while (parentNode) {
+                if (parentNode.left && parentNode.left.data === value) {
+                    return parentNode
+                } else if (parentNode.right && parentNode.right.data === value) {
+                    return parentNode
+                }
+                if (value > parentNode.right.data || value > parentNode.data && value < parentNode.right.data) {
+                    parentNode = parentNode.right
+                }
+                if (value < parentNode.left.data || value < parentNode.data && value > parentNode.left.data) {
+                    parentNode = parentNode.left
+                }
             }
-            if (value > parentNode.right.data || value > parentNode.data && value < parentNode.right.data) {
-                parentNode = parentNode.right
-            }
-            if (value < parentNode.left.data || value < parentNode.data && value > parentNode.left.data) {
-                parentNode = parentNode.left
-            }
+            return null
         }
-        return null
+
     }
 
     deleteNode(value: E) {

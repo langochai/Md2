@@ -74,35 +74,56 @@ var BinaryTree = /** @class */ (function () {
         }
     };
     BinaryTree.prototype.findParent = function (value) {
-        var parentNode = this.root;
-        while (parentNode) {
-            if (parentNode.left && parentNode.left.data === value) {
-                return parentNode;
-            }
-            else if (parentNode.right && parentNode.right.data === value) {
-                return parentNode;
-            }
-            if (value > parentNode.right.data || value > parentNode.data && value < parentNode.right.data) {
-                parentNode = parentNode.right;
-            }
-            if (value < parentNode.left.data || value < parentNode.data && value > parentNode.left.data) {
-                parentNode = parentNode.left;
-            }
+        if (this.root.data === value) {
+            return null;
         }
-        return null;
+        else {
+            var parentNode = this.root;
+            while (parentNode) {
+                if (parentNode.left && parentNode.left.data === value) {
+                    return parentNode;
+                }
+                else if (parentNode.right && parentNode.right.data === value) {
+                    return parentNode;
+                }
+                if (value > parentNode.right.data || value > parentNode.data && value < parentNode.right.data) {
+                    parentNode = parentNode.right;
+                }
+                if (value < parentNode.left.data || value < parentNode.data && value > parentNode.left.data) {
+                    parentNode = parentNode.left;
+                }
+            }
+            return null;
+        }
     };
     BinaryTree.prototype.deleteNode = function (value) {
         var currentNode = this.searchNode(value);
         if (currentNode) {
             if (!currentNode.left) {
-                var parentNode = this.findParent(value);
-                if (parentNode.left && parentNode.left.data === currentNode.data) {
-                    parentNode.left = currentNode.right;
-                    this.totalNode--;
+                if (currentNode.data === this.root.data) {
+                    if (!currentNode.right) {
+                        currentNode.data = null;
+                        this.totalNode--;
+                    }
+                    else {
+                        currentNode.data = this.root.right.data;
+                        if (this.root.right.left)
+                            currentNode.left = this.root.right.left;
+                        if (this.root.right.right)
+                            currentNode.right = this.root.right.right;
+                        this.totalNode--;
+                    }
                 }
-                else if (parentNode.right && parentNode.right.data === currentNode.data) {
-                    parentNode.right = currentNode.right;
-                    this.totalNode--;
+                else {
+                    var parentNode = this.findParent(value);
+                    if (parentNode.left && parentNode.left.data === currentNode.data) {
+                        parentNode.left = currentNode.right;
+                        this.totalNode--;
+                    }
+                    else if (parentNode.right && parentNode.right.data === currentNode.data) {
+                        parentNode.right = currentNode.right;
+                        this.totalNode--;
+                    }
                 }
             }
             else {
