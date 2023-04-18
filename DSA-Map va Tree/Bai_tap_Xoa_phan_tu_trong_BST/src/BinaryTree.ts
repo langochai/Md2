@@ -104,10 +104,12 @@ export class BinaryTree<E> implements Tree<E> {
                 if(currentNode.data === this.root.data){
                     if(!currentNode.right){
                         currentNode.data = null
+                        this.totalNode--
                     } else {
                         currentNode.data = this.root.right.data
                         if (this.root.right.left) currentNode.left = this.root.right.left
                         if (this.root.right.right) currentNode.right = this.root.right.right
+                        this.totalNode--
                     }
                 } else {
                     let parentNode = this.findParent(value)
