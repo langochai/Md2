@@ -1,6 +1,6 @@
 let matrix: number [][] = [[0, 1, 1, 2], [0, 5, 0, 0], [2, 0, 3, 3]]
 
-function noHaunted(arr: number[][]): number {
+function noHauntedRoom(arr: number[][]): number {
     let sum: number = 0
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 4; j++) {
@@ -14,4 +14,4 @@ function noHaunted(arr: number[][]): number {
     return sum
 }
 
-console.log(noHaunted(matrix))
+console.log(noHauntedRoom(matrix))
