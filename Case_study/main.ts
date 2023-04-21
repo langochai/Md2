@@ -70,7 +70,8 @@ function mainMenu() {
         main()
     }
 }
-function menuForAdmin(){
+
+function menuForAdmin() {
     let option: string[] = ["Show list of accounts as admin", "Set authority for an account",
         "Change password for an account", "Change username for an account", "Search for an account",
         "Delete an account"]
@@ -103,7 +104,7 @@ function menuForAdmin(){
                 if (validAccForNewPW) {
                     list.changePassword(nameForPW, newPassword)
                 } else {
-                    console.log(`Wrong username/password input`)
+                    console.log(`Wrong password input`)
                 }
             } else {
                 console.log(`Cannot find this username`)
@@ -140,7 +141,8 @@ function menuForAdmin(){
             main()
     }
 }
-function menuForEmployee(username){
+
+function menuForEmployee(username) {
     let option: string[] = ["Show list of accounts as employee", "Change username", "Change password"]
     let index = readlineSync.keyInSelect(option, 'Please choose:')
     switch (index) {
@@ -150,19 +152,24 @@ function menuForEmployee(username){
             break
         case 1:
             let newUsername = readlineSync.question(`Enter new username:`)
-            list.changeUserName(username, newUsername)
+            let nameRegex: RegExp = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/
+            if (nameRegex.test(newUsername)) list.changeUserName(username, newUsername)
+            else console.log(`Invalid new username!`)
             mainMenuOrEmployeeMenu(username)
             break
         case 2:
             let newPassword = readlineSync.question(`Enter new password:`, {hideEchoBack: true})
-            list.changePassword(username, newPassword)
+            let passwordRegex: RegExp = /^[A-Za-z]{2}[0-9]{2}$/
+            if (passwordRegex.test(newPassword)) list.changePassword(username, newPassword)
+            else console.log(`Invalid new password!`)
             mainMenuOrEmployeeMenu(username)
             break
         default:
-            main()
+            mainMenuOrEmployeeMenu(username)
     }
 }
-function mainMenuOrAdminMenu(){
+
+function mainMenuOrAdminMenu() {
     if (readlineSync.keyInYN('Do you wanna return to main menu?\n' +
         'Press Y for main menu, press N to go back')) {
         main()
@@ -170,7 +177,8 @@ function mainMenuOrAdminMenu(){
         menuForAdmin()
     }
 }
-function mainMenuOrEmployeeMenu(username){
+
+function mainMenuOrEmployeeMenu(username) {
     if (readlineSync.keyInYN('Do you wanna return to main menu?\n' +
         'Press Y for main menu, press N to go back')) {
         main()
@@ -178,4 +186,5 @@ function mainMenuOrEmployeeMenu(username){
         menuForEmployee(username)
     }
 }
+
 main()
