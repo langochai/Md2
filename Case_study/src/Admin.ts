@@ -17,7 +17,7 @@ export class Admin extends Employee{
         this.password = password
     }
     setName(username: string) {
-        super.setName(username);
+        this.username = username
     }
 
     getAuthority(): "Admin" | "Employee" {
@@ -28,7 +28,7 @@ export class Admin extends Employee{
         return this.password
     }
     getName(): string {
-        return super.getName();
+        return this.username
     }
 
     setList(list:AccountManager){

@@ -7,9 +7,12 @@ export class AccountManager {
     constructor() {
         this.list = [];
     }
-
+    validAcc(username:string, password:string):Employee{
+        let nameRegex:RegExp = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/
+        let passwordRegex: RegExp = /^[A-Za-z]{2}[0-9]{2}$/
+        if(nameRegex.test(username) && passwordRegex.test(password)) return new Employee(username,password)
+    }
     add(account: Admin | Employee): void {
-        if(!this.list.includes(account))
         this.list.push(account)
     }
 
@@ -45,7 +48,12 @@ export class AccountManager {
         console.table(list)
     }
     showListForAdmin(){
-        console.table(this.list)
+        let list: Object[] = []
+        for (let i = 0; i < this.list.length; i++) {
+            let {username,password,authority} = this.list[i]
+            list.push({username,password,authority})
+        }
+        console.table(list)
     }
 
     size(): number {

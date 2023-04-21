@@ -2,7 +2,7 @@ export type Authority = "Admin" | "Employee"
 export class Employee{
     authority:Authority;
     username:string;
-    protected password:string;
+    password:string;
 
     constructor(username: string, password: string) {
         this.username = username;
