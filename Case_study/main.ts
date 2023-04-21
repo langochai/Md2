@@ -51,7 +51,7 @@ function main() {
             if (!newEmployee) {
                 console.log(`Invalid input!`)
                 mainMenu()
-            } else if (list.list.includes(newEmployee)) {
+            } else if (list.get(newUsername)) {
                 console.log(`Account existed!`)
                 mainMenu()
             } else {
