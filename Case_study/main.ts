@@ -23,7 +23,6 @@ function main() {
             mainMenu()
             break
         case 1:
-
             let username = readlineSync.question("Please enter username here:")
             let account = list.get(username)
             if (account) {
