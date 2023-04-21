@@ -10,9 +10,9 @@ let e1 = new Employee("a", "a")
 
 list.add(admin)
 list.add(e1)
-var readlineSync = require('readline-sync');
+let readlineSync = require('readline-sync');
 
-function main() {
+function test() {
     console.log(`Press a number to pick an option:`)
     let option: string[] = ["Show list of accounts", "Log in", "Create new account"]
     let index = readlineSync.keyInSelect(option, 'Please choose:')
@@ -70,7 +70,7 @@ function main() {
                                 returnToMainMenu()
                                 break
                             default:
-                                main()
+                                test()
                         }
                     } else {
                         let option: string[] = ["Show list of accounts as employee", "Change username", "Change password"]
@@ -93,12 +93,12 @@ function main() {
                                 returnToMainMenu()
                                 break
                             default:
-                                main()
+                                test()
                         }
                     }
                 } else {
                     console.log(`Wrong password. Return to main menu`)
-                    main()
+                    test()
                 }
                 returnToMainMenu()
             }else{
@@ -114,14 +114,14 @@ function main() {
             returnToMainMenu()
             break
         default:
-            main()
+            test()
     }
 }
 function returnToMainMenu(){
-    if (readlineSync.keyInYN('Do you wanna return to main menu?')) {
-        main()
+    if (readlineSync.keyInYN('Do you wanna return to test menu?')) {
+        test()
     } else {
         console.log(`then why picked this option? wtf?`)
     }
 }
-main()
+test()
