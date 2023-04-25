@@ -4,12 +4,12 @@ body {
 }
 
 div.header{
-    line-height: 50px;
-    text-align: center;
     position: fixed;
     top: 0;
     height: 50px;
     z-index: 1;
+    line-height: 50px;
+    text-align: center;
 }
 .body-content{
     position: relative;
@@ -47,6 +47,8 @@ div.right_side_bar {
 }
 
 div.content {
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     position: relative;
     background-color: wheat;
