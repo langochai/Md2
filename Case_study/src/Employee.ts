@@ -1,30 +1,37 @@
 export type Authority = "Admin" | "Employee"
-export class Employee{
-    authority:Authority;
-    username:string;
-    password:string;
+
+export class Employee {
+    authority: Authority;
+    username: string;
+    password: string;
 
     constructor(username: string, password: string) {
         this.username = username;
         this.password = password;
         this.authority = "Employee"
     }
-    setAuthority(authority:Authority){
+
+    setAuthority(authority: Authority) {
         this.authority = authority
     }
-    setPassword(password:string){
+
+    setPassword(password: string) {
         this.password = password
     }
-    setName(username:string){
+
+    setName(username: string) {
         this.username = username
     }
-    getAuthority(){
+
+    getAuthority() {
         return this.authority
     }
-    getPassword(){
+
+    getPassword() {
         return this.password
     }
-    getName(){
+
+    getName() {
         return this.username
     }
 }
