@@ -7,6 +7,14 @@ export class AccountManager {
     constructor() {
         this.list = [];
     }
+    validName(name:string):boolean{
+        let nameRegex:RegExp = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/
+        return nameRegex.test(name)
+    }
+    validPassword(password:string):boolean{
+        let passwordRegex: RegExp = /^[A-Za-z]{2}[0-9]{2}$/
+        return passwordRegex.test(password)
+    }
     validAcc(username:string, password:string):Employee{
         let nameRegex:RegExp = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/
         let passwordRegex: RegExp = /^[A-Za-z]{2}[0-9]{2}$/
